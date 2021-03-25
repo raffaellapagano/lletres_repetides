@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 js lletres repetides</title>
+</head>
+<body>
+
+    <script>
+
+        // Exercici 3
+        // Emmagatzemar en un Map les lletres de l'array y el nombre de vegades que apareixen.
+        
+        let myName = ["R", "A", "F", "F", "A", "E", "L", "L", "A"]; 
+        const myMap = new Map ();
+
+        myName.map(letter => {
+            if (myMap.has(letter)){
+                let letterCount = myMap.get(letter);
+                myMap.set(letter, letterCount + 1)
+            }else{
+                myMap.set(letter, 1);
+            }
+        });
+        
+        console.log(myMap);
+    </script>
+    
+</body>
+</html>

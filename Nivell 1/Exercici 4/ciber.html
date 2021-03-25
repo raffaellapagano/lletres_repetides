@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 js lletres repetides</title>
+</head>
+<body>
+    <script>
+
+        //Ejercicio 4
+        // Crea otra array con tu apellido donde cada posición corresponda a una letra.
+        // Combinar los dos arrays en uno. Además, añade una posición con un espacio vacío entre la primera y la segunda. Es decir, partimos de 'array name y surname y al terminar la ejecución sólo tendremos una que se llamará fullname.
+
+        let name = ["R", "A", "F", "F", "A", "E", "L", "L", "A"];
+        let surname = ["P", "A", "G", "A", "N", "O"];
+        let espacio = " ";
+
+        let fullName = [].concat(name, espacio, surname);
+        console.log(fullName);
+    </script>
+    
+</body>
+</html>
