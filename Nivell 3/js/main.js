@@ -81,7 +81,7 @@
         function searchEmails() {
             let str = document.getElementById("comment").value;
             // str = str.split("");
-            var myRe = /([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.\ñ])+\.([A-Za-z]{2,4})/gi;
+            var myRe = /([A-Za-z0-9_\-\.\ñ])+\@([A-Za-z0-9_\-\.\ñ])+\.([A-Za-z]{2,4})/gi;
             var myArray = str.match(myRe);
             const myUniqueArray = [...new Set(myArray)];
             document.getElementById("modalbody5").innerHTML = "Emails: " + myUniqueArray;
